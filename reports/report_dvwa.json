@@ -1,0 +1,149 @@
+[
+  {
+    "check": "Header: Content-Security-Policy",
+    "status": "FAIL",
+    "detail": "Missing. Purpose: XSS mitigation",
+    "severity": "Medium",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Header: X-Frame-Options",
+    "status": "FAIL",
+    "detail": "Missing. Purpose: Clickjacking protection",
+    "severity": "Medium",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Header: Strict-Transport-Security",
+    "status": "FAIL",
+    "detail": "Missing. Purpose: HTTPS enforcement",
+    "severity": "Medium",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Header: X-Content-Type-Options",
+    "status": "FAIL",
+    "detail": "Missing. Purpose: MIME sniffing prevention",
+    "severity": "Medium",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Header: Referrer-Policy",
+    "status": "FAIL",
+    "detail": "Missing. Purpose: Referrer leakage control",
+    "severity": "Medium",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Header: Permissions-Policy",
+    "status": "FAIL",
+    "detail": "Missing. Purpose: Browser feature restriction",
+    "severity": "Medium",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Cookie Flags",
+    "status": "INFO",
+    "detail": "No cookies set",
+    "severity": "Info",
+    "owasp_ref": "N/A"
+  },
+  {
+    "check": "Info: Server",
+    "status": "FAIL",
+    "detail": "Reveals: Apache/2.4.25 (Debian)",
+    "severity": "Low",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Info: X-Powered-By",
+    "status": "PASS",
+    "detail": "Not disclosed",
+    "severity": "Low",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Info: X-AspNet-Version",
+    "status": "PASS",
+    "detail": "Not disclosed",
+    "severity": "Low",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Info: X-Generator",
+    "status": "PASS",
+    "detail": "Not disclosed",
+    "severity": "Low",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "Clickjacking",
+    "status": "FAIL",
+    "detail": "No X-Frame-Options or CSP frame-ancestors",
+    "severity": "Medium",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "CORS",
+    "status": "PASS",
+    "detail": "Default same-origin policy",
+    "severity": "Low",
+    "owasp_ref": "OWASP A05:2021"
+  },
+  {
+    "check": "robots.txt",
+    "status": "INFO",
+    "detail": "Present (expected)",
+    "severity": "Info",
+    "owasp_ref": "N/A"
+  },
+  {
+    "check": "Exposed: /.git/HEAD",
+    "status": "PASS",
+    "detail": "Not accessible HTTP 404",
+    "severity": "Low",
+    "owasp_ref": "OWASP A01:2021"
+  },
+  {
+    "check": "Exposed: /.env",
+    "status": "PASS",
+    "detail": "Not accessible HTTP 404",
+    "severity": "Low",
+    "owasp_ref": "OWASP A01:2021"
+  },
+  {
+    "check": "Exposed: /backup.zip",
+    "status": "PASS",
+    "detail": "Not accessible HTTP 404",
+    "severity": "Low",
+    "owasp_ref": "OWASP A01:2021"
+  },
+  {
+    "check": "Exposed: /config.php.bak",
+    "status": "PASS",
+    "detail": "Not accessible HTTP 404",
+    "severity": "Low",
+    "owasp_ref": "OWASP A01:2021"
+  },
+  {
+    "check": "Exposed: /.htaccess",
+    "status": "PASS",
+    "detail": "Not accessible HTTP 403",
+    "severity": "Low",
+    "owasp_ref": "OWASP A01:2021"
+  },
+  {
+    "check": "Exposed: /phpinfo.php",
+    "status": "PASS",
+    "detail": "Not accessible HTTP 302",
+    "severity": "Low",
+    "owasp_ref": "OWASP A01:2021"
+  },
+  {
+    "check": "SSL/TLS",
+    "status": "INFO",
+    "detail": "Not HTTPS, skipping",
+    "severity": "Medium",
+    "owasp_ref": "OWASP A02:2021"
+  }
+]
